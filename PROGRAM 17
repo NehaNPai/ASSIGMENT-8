@@ -1,0 +1,16 @@
+matrix = [[1, 2, 3], [2, 4, 5], [1, 1, 1]]
+sorted_matrix = sorted(matrix, key=lambda x: sum(x))
+print("Original Matrix:", matrix)
+print("Sort the said matrix in ascending order according to the sum of its rows", sorted_matrix)
+
+matrix = [[1, 2, 3], [-2, 4, -5], [1, -1, 1]]
+sorted_matrix = sorted(matrix, key=lambda x: sum(x))
+print("Original Matrix:", matrix)
+print("Sort the said matrix in ascending order according to the sum of its rows", sorted_matrix)
+
+
+OUTPUT:
+Original Matrix: [[1, 2, 3], [2, 4, 5], [1, 1, 1]]
+Sort the said matrix in ascending order according to the sum of its rows [[1, 1, 1], [1, 2, 3], [2, 4, 5]]
+Original Matrix: [[1, 2, 3], [-2, 4, -5], [1, -1, 1]]
+Sort the said matrix in ascending order according to the sum of its rows [[-2, 4, -5], [1, -1, 1], [1, 2, 3]]
