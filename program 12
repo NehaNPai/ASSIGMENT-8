@@ -1,0 +1,11 @@
+
+tuple_list = [('English', 88), ('Science', 90), ('Maths', 97), ('Social sciences', 82)]
+
+
+sorted_tuple_list = sorted(tuple_list, key=lambda x: x[1])
+
+print("Sorting the List of Tuples:", sorted_tuple_list)
+
+
+output:
+Sorting the List of Tuples: [('Social sciences', 82), ('English', 88), ('Science', 90), ('Maths', 97)]
