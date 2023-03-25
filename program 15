@@ -1,0 +1,17 @@
+def is_number(string):
+    try:
+        float(string)
+        return True
+    except ValueError:
+        return False
+print(is_number('12345')) 
+print(is_number('-12.34')) 
+print(is_number('1.2.3.4')) 
+print(is_number('abc123')) 
+
+
+output:
+True
+True
+False
+False
