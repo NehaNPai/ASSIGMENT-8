@@ -1,0 +1,10 @@
+class ReverseString:
+    
+    def reverse_word_by_word(self, sentence: str) -> str:
+        words = sentence.split()
+        words.reverse()
+        return ' '.join(words)
+
+reverser = ReverseString()
+result = reverser.reverse_word_by_word("Hello world")
+print(result)  
