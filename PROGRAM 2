@@ -1,0 +1,26 @@
+class ParenthesesChecker:
+    def __init__(self):
+        self.opening_brackets = set(['(', '{', '['])
+        self.closing_brackets = set([')', '}', ']'])
+        self.matching_pairs = {'(': ')', '{': '}', '[': ']'}
+        
+    def is_valid(self, s):
+        stack = []
+        for char in s:
+            if char in self.opening_brackets:
+                stack.append(char)
+            elif char in self.closing_brackets:
+                if not stack:
+                    return False
+                last_opening = stack.pop()
+                if char != self.matching_pairs[last_opening]:
+                    return False
+        return not stack
+
+pc = ParenthesesChecker()
+
+print(pc.is_valid('()'))         
+print(pc.is_valid('()[]{}'))     
+print(pc.is_valid('(]'))         
+print(pc.is_valid('([)]'))       
+print(pc.is_valid('{{{}}'))    
