@@ -1,0 +1,11 @@
+class SubsetGenerator:
+    def generate_subsets(self, nums):
+        result = [[]]
+        for num in nums:
+            new_subsets = [subset + [num] for subset in result]
+            result.extend(new_subsets)
+        return result
+
+sg = SubsetGenerator()
+
+print(sg.generate_subsets([4, 5, 6]))
