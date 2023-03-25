@@ -1,0 +1,9 @@
+class MyClass:
+    pass
+
+obj = MyClass()
+print(type(obj).__name__) 
+
+
+OUTPUT:
+MyClass
