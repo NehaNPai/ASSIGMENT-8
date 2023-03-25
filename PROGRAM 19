@@ -1,0 +1,11 @@
+lst = ['red', 'black', 'white', 'green', 'orange']
+
+substring = 'ack'
+
+result = list(filter(lambda x: substring in x, lst))
+
+print(f"Elements of the said list that contain specific substring '{substring}': {result}")
+
+
+OUTPUT:
+Elements of the said list that contain specific substring 'ack': ['black']
