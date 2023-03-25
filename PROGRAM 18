@@ -1,0 +1,12 @@
+string = 'PaceWisd0m'
+
+check_string = lambda s: any(i.isupper() for i in s) and any(i.islower() for i in s) and any(i.isdigit() for i in s) and len(s) >= 10
+
+if check_string(string):
+    print('Valid string')
+else:
+    print('Invalid string')
+    
+    
+    OUTPUT:
+    Valid string
