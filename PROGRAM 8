@@ -1,0 +1,20 @@
+class StringReverser:
+    
+    def __init__(self):
+        self.input_string = ""
+
+    def get_string(self):
+        self.input_string = input("Enter a string: ")
+        
+    def print_string(self):
+        print(self.input_string[::-1])
+
+reverser = StringReverser()
+reverser.get_string()
+reverser.print_string()
+
+
+
+OUTPUT:
+Enter a string: YOUR
+RUOY
