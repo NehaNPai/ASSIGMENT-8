@@ -1,0 +1,9 @@
+starts_with = lambda x: lambda y: y.startswith(x)
+string = "Hello, world!"
+char = "H"
+result = starts_with(char)(string)
+print(result)  
+
+
+output:
+False
